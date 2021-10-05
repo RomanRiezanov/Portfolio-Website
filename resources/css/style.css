@@ -1,0 +1,152 @@
+/* -------------------- HEAD -------------------- */
+.wrapper {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.header {
+    margin: 5% 0;
+    text-align: center;
+}
+
+.header_title {
+    font-family: 'Cairo', sans-serif;
+    font-weight: 700;
+    font-size: 5vw;
+}
+
+.nav {
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.nav_link {
+    display: block;
+    position: relative;
+    font-family: 'Cairo', sans-serif;
+    font-size: 1.8vw;
+    font-weight: 600;
+    color: #000000;
+    letter-spacing: 3px;
+    text-decoration: none;
+    padding-bottom: 3%;
+}
+
+.nav_link:hover::after,
+.nav_link:focus::after {
+	opacity: 1;
+}
+
+.nav_link::after {
+	content: '';
+	position: absolute;
+	left: 0;
+    bottom: 0;
+	width: 100%;
+	height: 0.1em;
+	background-color: #000000;
+	opacity: 0;
+	transition: opacity 300ms, transform 300ms;
+}
+
+.nav_link::after {
+	opacity: 1;
+	transform: scale(0);
+	transform-origin: center;
+}
+
+.nav_link:hover::after,
+.nav_link:focus::after{
+	transform: scale(1);
+}
+
+/* -------------------- MAIN -------------------- */
+
+.author_img_block {
+    display: grid;
+    justify-items: center;
+    margin-bottom: 3%;
+}
+
+.author_img {
+    width: 50%;
+}
+
+.about-me_block_title {
+    font-family: 'Cairo', sans-serif;
+    font-size: 2.5vw;
+    font-weight: 600;
+    color: #000000;
+    letter-spacing: 3px;
+    margin-bottom: 2%;
+}
+
+.about-me_block_text {
+    font-family: open sans,sans-serif;;
+    font-size: 1.4vw;
+    font-weight: 400;
+    color: #000000;
+    padding: 1.5% 0;
+    line-height: 1.2;
+    margin-bottom: 2%;
+}
+
+.projects_block_title {
+    font-family: 'Cairo', sans-serif;
+    font-size: 2.5vw;
+    font-weight: 600;
+    color: #000000;
+    letter-spacing: 3px;
+    margin-bottom: 2%;
+}
+
+.projects_block_text {
+    font-family: open sans,sans-serif;;
+    font-size: 1.4vw;
+    font-weight: 400;
+    color: #000000;
+    padding: 1.5% 0;
+    line-height: 1.2;
+    margin-bottom: 2%;
+}
+
+.here_link {
+    color: #000000;
+    font-weight: 600;
+}
+
+.try_block_title {
+    font-family: 'Cairo', sans-serif;
+    font-size: 2.5vw;
+    font-weight: 600;
+    color: #000000;
+    letter-spacing: 3px;
+    margin-bottom: 2%;
+}
+
+/* -------------------- FOOT -------------------- */
+
+.footer_block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer_title {
+    font-family: 'Cairo', sans-serif;
+    font-size: 2.5vw;
+    font-weight: 600;
+    color: #000000;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.footer_link {
+    text-align: center;
+    width: 100%;
+}
+
+.footer_link > img {
+    width: 50%;
+}
