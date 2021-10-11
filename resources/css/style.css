@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 /* -------------------- HEAD -------------------- */
 .wrapper {
     width: 50%;
@@ -112,7 +116,14 @@
 }
 
 .projects_block_favourite-projects-list-item{
-    list-style-type: disclosure-closed;
+    list-style: none;
+    margin: 0;
+	padding: 5% 0 3% 7%;
+	list-style: none;
+	background-image: url("../../resources/media/shuttle.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 5%;
 }
 
 .projects_block_favourite-projects-img {
@@ -120,18 +131,25 @@
 }
 
 .projects_block_favourite-projects-text {
+    display: inline-block;
     font-family: open, sans-serif;;
     font-size: 1.4vw;
     font-weight: 600;
     color: #000000;
     padding: 1.5% 0;
     line-height: 1.2;
+    margin-left: 2%;
     margin-bottom: 2%;
     cursor: pointer;
+    transition: 1s;
 }
 
 .projects_block_favourite-projects-link {
     text-decoration: none;
+}
+
+.projects_block_favourite-projects-text:hover {
+    transform: scale(1.2);
 }
 
 .projects_block_favourite-projects-item-text {
