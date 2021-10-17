@@ -120,6 +120,17 @@ html {
     text-align: center;
 }
 
+.title {
+    display: grid;
+    grid-template-columns: 1fr 10%;
+}
+
+.theme-img {
+    width: 50%;
+    cursor: pointer;
+}
+
+
 .header_title {
     font-weight: 700;
     font-size: 5vw;
@@ -298,6 +309,12 @@ html {
     width: 15%;
     display: inline-block;
     transition: all 0.3s;
+    height: 35px;
+    font-size: 1.4vw;
+}
+
+#select, #select1 {
+    font-size: 1.4vw;
 }
 
 .button, .reset {
@@ -305,8 +322,10 @@ html {
     background-color: #ffffff;
     color: #00000059;
     width: 30%;
+    height: 50px;
     transition: .2s all;
     font-weight: bold;
+    font-size: 1.4vw;
 }
 
 .button:hover, .reset:hover{
@@ -398,6 +417,17 @@ html {
     }
     .try_block_title {
         font-size: 32px;
+    }
+    #amount, #result {
+        height: 15px;
+        font-size: 12px;
+    }
+    #select, #select1 {
+        font-size: 12px;
+    }
+    .button, .reset {
+        height: 25px;
+        font-size: 12px;
     }
     .convert-text {
         font-size: 12px;

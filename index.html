@@ -12,26 +12,32 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <div class="wrapper">
+    <div class="wrapper" id='wrapper'>
         <header class="header">
-            <h1 class="header_title">Roman Riezanov</h1>
+            <div class="title">
+                <h1 class="header_title" id="forSetTime-title">Roman Riezanov</h1>
+            <div class="time">
+                <img src="resources/media/moon.png" alt="night theme img" id ="night" class="theme-img">
+                <img src="resources/media/sunny-day.png" alt="sunny theme img" id ="day" class="theme-img">
+            </div>
+            </div>
             <div class="hamburger-menu">
                 <input id="menu__toggle" type="checkbox" />
                 <label class="menu__btn" for="menu__toggle">
                   <span></span>
                 </label>
                 <ul class="menu__box">
-                  <li><a class="menu__item" href="#">Home</a></li>
-                  <li><a class="menu__item" href="#about-me">About Me</a></li>
-                  <li><a class="menu__item" href="#projects">Projects</a></li>
-                  <li><a class="menu__item" href="contact.html">Contact</a></li>
+                  <li><a class="menu__item" href="#" id="forSetTime-home">Home</a></li>
+                  <li><a class="menu__item" href="#about-me" id="forSetTime-about">About Me</a></li>
+                  <li><a class="menu__item" href="#projects" id="forSetTime-projects-menu">Projects</a></li>
+                  <li><a class="menu__item" href="contact.html" id="forSetTime-contact">Contact</a></li>
                 </ul>
               </div>
             <nav class="nav">
-                <a href="#" class="nav_link">Home</a>
-                <a href="#about-me" class="nav_link">About Me</a>
-                <a href="#projects" class="nav_link">Projects</a>
-                <a href="contact.html" class="nav_link">Contact</a>
+                <a href="#" class="nav_link" id="forSetTime-home-nav">Home</a>
+                <a href="#about-me" class="nav_link" id="forSetTime-about-nav">About Me</a>
+                <a href="#projects" class="nav_link" id="forSetTime-projects-nav">Projects</a>
+                <a href="contact.html" class="nav_link" id="forSetTime-contact-nav">Contact</a>
             </nav>
         </header>
         <main class="main">
@@ -40,11 +46,11 @@
                 <img src="resources/media/mobile_author.JPG" alt="author" class="mobile-author">
             </div>
             <section class="about-me_block" id="about-me">
-                <h2 class="about-me_block_title">About Me</h2>
-                <p class="about-me_block_text">I am looking for front-end position. I have good knowledge in html,css, js. I have experience working as part of a team and individually. I am always energetic and eager to learn new skills. I have completed HTML and CSS courses and now I'm studying front-end courses.</p>
+                <h2 class="about-me_block_title" id="forSetTime-about-me">About Me</h2>
+                <p class="about-me_block_text" id="forSetTime-about-me-text">I am looking for front-end position. I have good knowledge in html,css, js. I have experience working as part of a team and individually. I am always energetic and eager to learn new skills. I have completed HTML and CSS courses and now I'm studying front-end courses.</p>
             </section>
             <section class="projects_block" id="projects">
-                <h2 class="projects_block_title">Projects</h2>
+                <h2 class="projects_block_title" id="forSetTime-projects">Projects</h2>
                 <div class="projects_block_favourite-projects">
                     <ul class="projects_block_favourite-projects-list">
                         <li class="projects_block_favourite-projects-list-item" id='rocket'>
@@ -52,7 +58,7 @@
                             <div class="projects_block_favourite-project_content" id="project_block_1">
                                 <a href="https://github.com/qoowka/Blog-Pchelnikova" target="_blank" class="projects_block_favourite-projects-link">
                                     <img src="resources/media/blog-pchelnikova.jpg" alt="project blog-pchelnikova" class="projects_block_favourite-projects-img">
-                                    <p class="projects_block_favourite-projects-item-text">This project i developed special for my girlfriend. She is a graphic designer.</p>
+                                    <p class="projects_block_favourite-projects-item-text" id="forSetTime-blog-text">This project i developed special for my girlfriend. She is a graphic designer.</p>
                                 </a>
                             </div>
                         </li>
@@ -61,7 +67,7 @@
                             <div class="projects_block_favourite-project_content" id="project_block_2">
                                 <a href="https://www.provizio.net/" target="_blank" class="projects_block_favourite-projects-link">
                                     <img src="resources/media/provizio.jpg" alt="project provizio.net" class="projects_block_favourite-projects-img">
-                                    <p class="projects_block_favourite-projects-item-text">This project developed for Estonias company 'Provizio'.
+                                    <p class="projects_block_favourite-projects-item-text" id="forSetTime-provizio-text">This project developed for Estonias company 'Provizio'.
                                         PROVIZIO is a wireless intraocular pressure measurement system for glaucoma patients home monitoring. I used only html and css in this project.</p>
                                 </a>
                             </div>
@@ -71,20 +77,20 @@
                             <div class="projects_block_favourite-project_content" id="project_block_3">
                                 <a href="https://github.com/qoowka/Piano-Keys" target="_blank" class="projects_block_favourite-projects-link">
                                     <img src="resources/media/piano-keys.jpg" alt="project piano-keys" class="projects_block_favourite-projects-img">
-                                    <p class="projects_block_favourite-projects-item-text">This is my training project. I developed it on codecademy course with html, css, and js. And yes... these are real piano keys. Download my project and try to play them. Click on the text or on the picture to go to the project.</p>
+                                    <p class="projects_block_favourite-projects-item-text" id="forSetTime-piano-text">This is my training project. I developed it on codecademy course with html, css, and js. And yes... these are real piano keys. Download my project and try to play them. Click on the text or on the picture to go to the project.</p>
                                 </a>
                             </div>
                         </li>
                     </ul>
                 </div>
-                <p class="projects_block_text">You can see all my projects <a href="https://github.com/qoowka?tab=repositories" target="_blank" class="here_link">here.</a></p>
+                <p class="projects_block_text" id="forSetTime-all">You can see all my projects <a href="https://github.com/qoowka?tab=repositories" target="_blank" class="here_link">here.</a></p>
             </section>
             <section class="try_block">
-                <h2 class="try_block_title">Let`s try it</h2>
-                <p class="convert-text">Convert Your Money</p>
+                <h2 class="try_block_title" id="forSetTime-lets">Let`s try it</h2>
+                <p class="convert-text" id="forSetTime-convert">Convert Your Money</p>
                 <form>
                 <p class="convert-text">
-                    <label for="amount">Amount:</label>
+                    <label for="amount" id="forSetTime-amount">Amount:</label>
                     <input type="text" id="amount" value="">
                     <select id="select">
                         <option value="UAH">UAH </option>

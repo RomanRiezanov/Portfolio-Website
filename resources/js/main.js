@@ -1,3 +1,100 @@
+const night = document.getElementById('night');
+const day = document.getElementById('day');
+const wrapper = document.getElementById('wrapper');
+const setTimeTitle = document.getElementById('forSetTime-title');
+const setTimeHome = document.getElementById('forSetTime-home');
+const setTimeAbout = document.getElementById('forSetTime-about');
+const setTimeProjectsMenu = document.getElementById('forSetTime-projects-menu');
+const setTimeContact = document.getElementById('forSetTime-contact');
+const setTimeHomeNav = document.getElementById('forSetTime-home-nav');
+const setTimeAboutNav = document.getElementById('forSetTime-about-nav');
+const setTimeProjectsNav = document.getElementById('forSetTime-projects-nav');
+const setTimeContactNav = document.getElementById('forSetTime-contact-nav');
+const setTimeAboutMe = document.getElementById('forSetTime-about-me');
+const setTimeAboutMeText = document.getElementById('forSetTime-about-me-text');
+const setTimeProjects = document.getElementById('forSetTime-projects');
+const setTimeBlog = document.getElementById('project_1');
+const setTimeBlogText = document.getElementById('forSetTime-blog-text');
+const setTimeProvizio = document.getElementById('project_2');
+const setTimeProvizioText = document.getElementById('forSetTime-provizio-text');
+const setTimePiano = document.getElementById('project_3');
+const setTimePianoText = document.getElementById('forSetTime-piano-text');
+const setTimeAll = document.getElementById('forSetTime-piano-all');
+const setTimeLets = document.getElementById('forSetTime-lets');
+const setTimeConvert = document.getElementById('forSetTime-convert');
+const setTimeAmount = document.getElementById('forSetTime-amount');
+
+console.log(setTimeProvizio);
+
+
+
+
+function setTimeNight() {
+    if (night.hidden) {
+        night.hidden = false; 
+        day.hidden = true;
+
+        document.body.style.backgroundColor = '#ffffff';
+        setTimeTitle.style.color = '#000000';
+        setTimeHome.style.color = '#000000';
+        setTimeAbout.style.color = '#000000';
+        setTimeProjectsMenu.style.color = '#000000';
+        setTimeContact.style.color = '#000000';
+        setTimeHomeNav.style.color = '#000000';
+        setTimeAboutNav.style.color = '#000000';
+        setTimeProjectsNav.style.color = '#000000';
+        setTimeContactNav.style.color = '#000000';
+        setTimeAboutMe.style.color = '#000000';
+        setTimeAboutMeText.style.color = '#000000';
+        setTimeProjects.style.color = '#000000';
+        setTimeBlog.style.color = '#000000';
+        setTimeBlogText.style.color = '#000000';
+        setTimeProvizio.style.color = '#000000';
+        setTimeProvizioText.style.color = '#000000';
+        setTimePiano.style.color = '#000000';
+        setTimePianoText.style.color = '#000000';
+        setTimeAll.style.color = '#000000';
+        setTimeLets.style.color = '#000000';
+        setTimeConvert.style.color = '#000000';
+        setTimeAmount.style.color = '#000000';
+        
+
+    } else {
+        night.hidden = true; 
+        day.hidden = false;
+
+        document.body.style.backgroundColor = '#000000';
+        setTimeTitle.style.color = '#ffffff';
+        setTimeHome.style.color = '#ffffff';
+        setTimeAbout.style.color = '#ffffff';
+        setTimeProjectsMenu.style.color = '#ffffff';
+        setTimeContact.style.color = '#ffffff';
+        setTimeHomeNav.style.color = '#ffffff';
+        setTimeAboutNav.style.color = '#ffffff';
+        setTimeProjectsNav.style.color = '#ffffff';
+        setTimeContactNav.style.color = '#ffffff';
+        setTimeAboutMe.style.color = '#ffffff';
+        setTimeAboutMeText.style.color = '#ffffff';
+        setTimeProjects.style.color = '#ffffff';
+        setTimeBlog.style.color = '#ffffff';
+        setTimeBlogText.style.color = '#ffffff';
+        setTimeProvizio.style.color = '#ffffff';
+        setTimeProvizioText.style.color = '#ffffff';
+        setTimePiano.style.color = '#ffffff';
+        setTimePianoText.style.color = '#ffffff';
+        setTimeAll.style.color = '#ffffff';
+        setTimeLets.style.color = '#ffffff';
+        setTimeConvert.style.color = '#ffffff';
+        setTimeAmount.style.color = '#ffffff';
+
+    }
+}
+
+day.hidden = true;
+
+night.onclick = setTimeNight;
+day.onclick = setTimeNight;
+
 const project1 = document.getElementById('project_1');
 const projectBlock1 = document.getElementById('project_block_1');
 
