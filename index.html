@@ -47,7 +47,7 @@
                 <h2 class="projects_block_title">Projects</h2>
                 <div class="projects_block_favourite-projects">
                     <ul class="projects_block_favourite-projects-list">
-                        <li class="projects_block_favourite-projects-list-item">
+                        <li class="projects_block_favourite-projects-list-item" id='rocket'>
                             <p class="projects_block_favourite-projects-text" id="project_1">Blog-Pchelnikova</p>
                             <div class="projects_block_favourite-project_content" id="project_block_1">
                                 <a href="https://github.com/qoowka/Blog-Pchelnikova" target="_blank" class="projects_block_favourite-projects-link">
@@ -81,6 +81,28 @@
             </section>
             <section class="try_block">
                 <h2 class="try_block_title">Let`s try it</h2>
+                <p class="convert-text">Convert Your Money</p>
+                <form>
+                <p class="convert-text">
+                    <label for="amount">Amount:</label>
+                    <input type="text" id="amount" value="">
+                    <select id="select">
+                        <option value="UAH">UAH </option>
+                        <option value="USD">USD </option>
+                        <option value="EUR">EUR </option>
+                    </select>
+                    <select id="select1">
+                        <option value="USD">USD </option>
+                        <option value="EUR">EUR </option>
+                        <option value="UAH">UAH </option>
+                    </select>
+                    <input type="text" id="result" value="">
+                </p>
+                <p class="convert-text">
+                    <input type="button" value="Calculate" onclick="calculate();" class="button">
+                    <input type="reset" value="Reset" class="reset">
+                </p>
+                </form>
             </section>
         </main>
         <script  src="resources/js/main.js"></script>

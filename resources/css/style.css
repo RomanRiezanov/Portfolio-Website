@@ -283,6 +283,38 @@ html {
     margin-bottom: 2%;
 }
 
+.convert-text {
+    font-size: 1.4vw;
+    font-weight: 600;
+    color: #000000;
+    letter-spacing: 3px;
+    margin: 3% 0;
+    text-align: center;
+}
+
+#amount, #result {
+    color: #333;
+    border-radius: 0.2rem;
+    width: 15%;
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+.button, .reset {
+    border: 2px solid #00000059;
+    background-color: #ffffff;
+    color: #00000059;
+    width: 30%;
+    transition: .2s all;
+    font-weight: bold;
+}
+
+.button:hover, .reset:hover{
+    border: 2px solid #000000;
+    color: #000000;
+    font-weight: bold;
+}
+
 /* -------------------- FOOT -------------------- */
 
 .footer {
@@ -366,5 +398,8 @@ html {
     }
     .try_block_title {
         font-size: 32px;
+    }
+    .convert-text {
+        font-size: 12px;
     }
 }

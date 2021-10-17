@@ -42,3 +42,26 @@ function projectDrop3() {
 projectBlock3.hidden = true;
 
 project3.onclick = projectDrop3;
+
+function calculate() {
+    var amount = parseFloat(document.getElementById("amount").value);
+    var select = document.getElementById("select");
+    var select1 = document.getElementById("select1");
+    var result = document.getElementById("result"); 
+
+    if (select.value === "USD" && select1.value === "USD")  {
+        result.value = (amount * 1);
+    } else if (select.value === "USD" && select1.value === "EUR")  {
+        result.value = (amount * 0.86);
+    } else if (select.value === "EUR" && select1.value === "USD")  {
+        result.value = (amount * 1.16);
+    } else if (select.value === "USD" && select1.value === "UAH")  {
+        result.value = (amount * 26.39);
+    } else if (select.value === "EUR" && select1.value === "UAH")  {
+        result.value = (amount * 30.63);
+    } else if (select.value === "UAH" && select1.value === "EUR")  {
+        result.value = (amount * 0.033);
+    } else if (select.value === "UAH" && select1.value === "USD")  {
+        result.value = (amount * 0.038);
+    }
+}
