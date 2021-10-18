@@ -2,10 +2,6 @@ const night = document.getElementById('night');
 const day = document.getElementById('day');
 const wrapper = document.getElementById('wrapper');
 const setTimeTitle = document.getElementById('forSetTime-title');
-const setTimeHome = document.getElementById('forSetTime-home');
-const setTimeAbout = document.getElementById('forSetTime-about');
-const setTimeProjectsMenu = document.getElementById('forSetTime-projects-menu');
-const setTimeContact = document.getElementById('forSetTime-contact');
 const setTimeHomeNav = document.getElementById('forSetTime-home-nav');
 const setTimeAboutNav = document.getElementById('forSetTime-about-nav');
 const setTimeProjectsNav = document.getElementById('forSetTime-projects-nav');
@@ -19,14 +15,13 @@ const setTimeProvizio = document.getElementById('project_2');
 const setTimeProvizioText = document.getElementById('forSetTime-provizio-text');
 const setTimePiano = document.getElementById('project_3');
 const setTimePianoText = document.getElementById('forSetTime-piano-text');
-const setTimeAll = document.getElementById('forSetTime-piano-all');
+const setTimeAll = document.getElementById('forSetTime-all');
+const setTimeHere = document.getElementById('here');
 const setTimeLets = document.getElementById('forSetTime-lets');
 const setTimeConvert = document.getElementById('forSetTime-convert');
 const setTimeAmount = document.getElementById('forSetTime-amount');
-
-console.log(setTimeProvizio);
-
-
+const setTimeRocket = document.getElementsByClassName('projects_block_favourite-projects-list-item');
+const setTimeBurger = document.getElementsByClassName('menu__span');
 
 
 function setTimeNight() {
@@ -36,10 +31,6 @@ function setTimeNight() {
 
         document.body.style.backgroundColor = '#ffffff';
         setTimeTitle.style.color = '#000000';
-        setTimeHome.style.color = '#000000';
-        setTimeAbout.style.color = '#000000';
-        setTimeProjectsMenu.style.color = '#000000';
-        setTimeContact.style.color = '#000000';
         setTimeHomeNav.style.color = '#000000';
         setTimeAboutNav.style.color = '#000000';
         setTimeProjectsNav.style.color = '#000000';
@@ -57,7 +48,10 @@ function setTimeNight() {
         setTimeLets.style.color = '#000000';
         setTimeConvert.style.color = '#000000';
         setTimeAmount.style.color = '#000000';
-        
+        setTimeHere.style.color = '#000000';
+        setTimeRocket[0].style.backgroundImage = "url('resources/media/shuttle.png')";
+        setTimeRocket[1].style.backgroundImage = "url('resources/media/shuttle.png')";
+        setTimeRocket[2].style.backgroundImage = "url('resources/media/shuttle.png')";
 
     } else {
         night.hidden = true; 
@@ -65,10 +59,6 @@ function setTimeNight() {
 
         document.body.style.backgroundColor = '#000000';
         setTimeTitle.style.color = '#ffffff';
-        setTimeHome.style.color = '#ffffff';
-        setTimeAbout.style.color = '#ffffff';
-        setTimeProjectsMenu.style.color = '#ffffff';
-        setTimeContact.style.color = '#ffffff';
         setTimeHomeNav.style.color = '#ffffff';
         setTimeAboutNav.style.color = '#ffffff';
         setTimeProjectsNav.style.color = '#ffffff';
@@ -86,7 +76,10 @@ function setTimeNight() {
         setTimeLets.style.color = '#ffffff';
         setTimeConvert.style.color = '#ffffff';
         setTimeAmount.style.color = '#ffffff';
-
+        setTimeHere.style.color = '#ffffff';
+        setTimeRocket[0].style.backgroundImage = "url('resources/media/shuttle-white.png')";
+        setTimeRocket[1].style.backgroundImage = "url('resources/media/shuttle-white.png')";
+        setTimeRocket[2].style.backgroundImage = "url('resources/media/shuttle-white.png')";
     }
 }
 

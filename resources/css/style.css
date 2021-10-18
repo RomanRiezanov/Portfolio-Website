@@ -32,7 +32,7 @@ html {
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: #000000;
+    background-color: #C0C0C0;
   }
 
 .menu__btn > span::before {
@@ -375,6 +375,15 @@ html {
     .hamburger-menu {
         display: block;
     }
+    .title {
+        grid-template-columns: 1fr 20%;
+    }
+    .time {
+        align-self: center;
+    }
+    .theme-img {
+        width: 50%;
+    }
     .nav {
         display: none;
     }
@@ -386,13 +395,13 @@ html {
         font-size: 48px;
         padding: 10px 0;
     }
-    .main{ 
+    .main { 
         margin: 0 20px;
     }
-    .author_img{ 
+    .author_img { 
         display: none;
     }
-    .mobile-author{ 
+    .mobile-author { 
         display: block;
     }
     .about-me_block_title {
@@ -404,6 +413,10 @@ html {
     }
     .projects_block_favourite-projects-list-item {
         background-size: 10%;
+    }
+    .projects_block_favourite-projects-img {
+        width: 80%;
+        margin-left: 10%;
     }
     .projects_block_title {
         font-size: 32px;
